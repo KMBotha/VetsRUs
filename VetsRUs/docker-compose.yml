@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  vetdb-db:
+    build:
+      context: ./VetDB  # Adjusted build context
+      dockerfile: Dockerfile   # Dockerfile for the database
+    container_name: vetdb-db
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Password1!"
+      MSSQL_PID: "Express"
+    ports:
+      - "1433:1433"
+      - "5000:1433"  
+    volumes:
+      - db_data:/var/opt/mssql
+      - ./logs:/var/opt/mssql/log  # Optional: To access logs
+    restart: always  # Automatically restart on failure
+    networks:
+      - vetdb-network
+
+  api-service:
+    build:
+      context: .               # Root context to ensure file accessibility
+      dockerfile: ./VetsAPI/Dockerfile  # Path to API Dockerfile
+    container_name: api-service1
+    environment:
+      SQL_CONNECTION_STRING: "Server=vetdb-db;Database=VetDb;Trusted_Connection=false;MultipleActiveResultSets=true;Encrypt=false;user id=sa;password=Password1!"
+    ports:
+      - "8080:8080"
+    depends_on:
+      vetdb-db:
+        condition: service_healthy
+    networks:
+      - vetdb-network
+
+networks:
+  vetdb-network:
+    driver: bridge
+
+volumes:
+  db_data:
+    
