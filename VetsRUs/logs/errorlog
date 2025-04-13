@@ -1,653 +1,92 @@
-2025-04-10 08:48:33.26 Server      Microsoft SQL Server 2022 (RTM-CU18) (KB5050771) - 16.0.4185.3 (X64) 
+2025-04-13 18:31:13.04 Server      Microsoft SQL Server 2022 (RTM-CU18) (KB5050771) - 16.0.4185.3 (X64) 
 	Feb 28 2025 18:24:49 
 	Copyright (C) 2022 Microsoft Corporation
 	Express Edition (64-bit) on Linux (Ubuntu 22.04.5 LTS) <X64>
-2025-04-10 08:48:33.26 Server      UTC adjustment: 0:00
-2025-04-10 08:48:33.26 Server      (c) Microsoft Corporation.
-2025-04-10 08:48:33.26 Server      All rights reserved.
-2025-04-10 08:48:33.26 Server      Server process ID is 500.
-2025-04-10 08:48:33.26 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
-2025-04-10 08:48:33.26 Server      Registry startup parameters: 
+2025-04-13 18:31:13.05 Server      UTC adjustment: 0:00
+2025-04-13 18:31:13.06 Server      (c) Microsoft Corporation.
+2025-04-13 18:31:13.06 Server      All rights reserved.
+2025-04-13 18:31:13.06 Server      Server process ID is 440.
+2025-04-13 18:31:13.07 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2025-04-13 18:31:13.07 Server      Registry startup parameters: 
 	 -d /var/opt/mssql/data/master.mdf
 	 -l /var/opt/mssql/data/mastlog.ldf
 	 -e /var/opt/mssql/log/errorlog
-2025-04-10 08:48:33.27 Server      SQL Server detected 1 sockets with 6 cores per socket and 12 logical processors per socket, 12 total logical processors; using 8 logical processors based on SQL Server licensing. This is an informational message; no user action is required.
-2025-04-10 08:48:33.28 Server      SQL Server is starting at normal priority base (=7). This is an informational message only. No user action is required.
-2025-04-10 08:48:33.28 Server      Detected 6267 MB of RAM, 5631 MB of available memory, 5631 MB of available page file. This is an informational message; no user action is required.
-2025-04-10 08:48:33.28 Server      Using conventional memory in the memory manager.
-2025-04-10 08:48:33.28 Server      Detected pause instruction latency: 112 cycles.
-2025-04-10 08:48:33.28 Server      SQL Server detected the following NUMA node configuration (NUMA Node number 0, Processor Group number 0, CPU Mask 0x0000000000000fff).
-2025-04-10 08:48:33.29 Server      Page exclusion bitmap is enabled.
-2025-04-10 08:48:33.33 Server      Buffer pool extension is not supported on Linux platform.
-2025-04-10 08:48:33.33 Server      Buffer Pool: Allocating 8388608 bytes for 892685 hashPages.
-2025-04-10 08:48:33.44 Server      Buffer pool extension is already disabled. No action is necessary.
-2025-04-10 08:48:33.86 Server      Installing Client TLS certificates to the store.
-2025-04-10 08:48:33.87 Server      CPU vectorization level(s) detected:  SSE SSE2 SSE3 SSSE3 SSE41 SSE42 AVX AVX2 POPCNT BMI1 BMI2 AVX512 (F CD BW DQ VL IFMA VBMI VBMI2 VNNI BITALG VPOQCNTDQ VP2INTERSECT)
-2025-04-10 08:48:33.91 Server      Successfully initialized the TLS configuration. Allowed TLS protocol versions are ['1.0 1.1 1.2']. Allowed TLS ciphers are ['ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:!DHE-RSA-AES256-GCM-SHA384:!DHE-RSA-AES128-GCM-SHA256:!DHE-RSA-AES256-SHA:!DHE-RSA-AES128-SHA'].
-2025-04-10 08:48:33.94 Server      Query Store settings initialized with enabled = 1, 
-2025-04-10 08:48:33.95 Server      The maximum number of dedicated administrator connections for this instance is '1'
-2025-04-10 08:48:33.96 Server      Node configuration: node 0: CPU mask: 0x00000000000000ff:0 Active CPU mask: 0x00000000000000ff:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
-2025-04-10 08:48:33.97 Server      Using dynamic lock allocation.  Initial allocation of 2500 Lock blocks and 5000 Lock Owner blocks per node.  This is an informational message only.  No user action is required.
-2025-04-10 08:48:34.00 Server      In-Memory OLTP initialized on lowend machine.
-2025-04-10 08:48:34.07 Server      [INFO] Created Extended Events session 'hkenginexesession'
-2025-04-10 08:48:34.07 Server      CLR version v4.0.30319 loaded.
-2025-04-10 08:48:34.07 Server      Database Instant File Initialization: enabled. For security and performance considerations see the topic 'Database Instant File Initialization' in SQL Server Books Online. This is an informational message only. No user action is required.
-2025-04-10 08:48:34.09 Server      Total Log Writer threads: 2. This is an informational message; no user action is required.
-2025-04-10 08:48:34.11 Server      clwb is selected for pmem flush operation.
-2025-04-10 08:48:34.11 Server      Software Usage Metrics is disabled.
-2025-04-10 08:48:34.13 spid28s     [1]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:48:34.14 spid28s     Starting up database 'master'.
-2025-04-10 08:48:34.28 spid28s     Converting database 'master' from version 927 to the current version 957.
-2025-04-10 08:48:34.28 spid28s     Database 'master' running the upgrade step from version 927 to version 928.
-2025-04-10 08:48:34.32 spid28s     Database 'master' running the upgrade step from version 928 to version 929.
-2025-04-10 08:48:34.34 spid28s     Database 'master' running the upgrade step from version 929 to version 930.
-2025-04-10 08:48:34.35 spid28s     Database 'master' running the upgrade step from version 930 to version 931.
-2025-04-10 08:48:34.36 spid28s     Database 'master' running the upgrade step from version 931 to version 932.
-2025-04-10 08:48:34.37 spid28s     Database 'master' running the upgrade step from version 932 to version 933.
-2025-04-10 08:48:34.39 spid28s     Database 'master' running the upgrade step from version 933 to version 934.
-2025-04-10 08:48:34.40 spid28s     Database 'master' running the upgrade step from version 934 to version 935.
-2025-04-10 08:48:34.42 spid28s     Database 'master' running the upgrade step from version 935 to version 936.
-2025-04-10 08:48:34.43 spid28s     Database 'master' running the upgrade step from version 936 to version 937.
-2025-04-10 08:48:34.43 Server      Common language runtime (CLR) functionality initialized.
-2025-04-10 08:48:34.43 spid28s     Database 'master' running the upgrade step from version 937 to version 938.
-2025-04-10 08:48:34.44 spid28s     Database 'master' running the upgrade step from version 938 to version 939.
-2025-04-10 08:48:34.45 spid28s     Database 'master' running the upgrade step from version 939 to version 940.
-2025-04-10 08:48:34.46 spid28s     Database 'master' running the upgrade step from version 940 to version 941.
-2025-04-10 08:48:34.46 spid28s     Database 'master' running the upgrade step from version 941 to version 942.
-2025-04-10 08:48:34.47 spid28s     Database 'master' running the upgrade step from version 942 to version 943.
-2025-04-10 08:48:34.50 spid28s     Database 'master' running the upgrade step from version 943 to version 944.
-2025-04-10 08:48:34.50 spid28s     Database 'master' running the upgrade step from version 944 to version 945.
-2025-04-10 08:48:34.52 spid28s     Database 'master' running the upgrade step from version 945 to version 946.
-2025-04-10 08:48:34.52 Server      External governance manager initialized
-2025-04-10 08:48:34.53 spid28s     Database 'master' running the upgrade step from version 946 to version 947.
-2025-04-10 08:48:34.54 spid28s     Database 'master' running the upgrade step from version 947 to version 948.
-2025-04-10 08:48:34.54 spid28s     Database 'master' running the upgrade step from version 948 to version 949.
-2025-04-10 08:48:34.55 spid28s     Database 'master' running the upgrade step from version 949 to version 950.
-2025-04-10 08:48:34.56 spid28s     Database 'master' running the upgrade step from version 950 to version 951.
-2025-04-10 08:48:34.58 spid28s     Database 'master' running the upgrade step from version 951 to version 952.
-2025-04-10 08:48:34.58 spid28s     Database 'master' running the upgrade step from version 952 to version 953.
-2025-04-10 08:48:34.59 spid28s     Database 'master' running the upgrade step from version 953 to version 954.
-2025-04-10 08:48:34.60 spid28s     Database 'master' running the upgrade step from version 954 to version 955.
-2025-04-10 08:48:34.61 spid28s     Database 'master' running the upgrade step from version 955 to version 956.
-2025-04-10 08:48:34.63 spid28s     Database 'master' running the upgrade step from version 956 to version 957.
-2025-04-10 08:48:34.70 spid28s     SQL Server Audit is starting the audits. This is an informational message. No user action is required.
-2025-04-10 08:48:34.70 spid38s     Attribute synchronization initialized
-2025-04-10 08:48:34.71 spid38s     Attribute synchronization manager initialized
-2025-04-10 08:48:34.71 spid28s     SQL Server Audit has started the audits. This is an informational message. No user action is required.
-2025-04-10 08:48:34.82 spid28s     SQL Trace ID 1 was started by login "sa".
-2025-04-10 08:48:34.83 spid43s     Password policy update was successful.
-2025-04-10 08:48:34.83 spid28s     Server name is '2b71e418e044'. This is an informational message only. No user action is required.
-2025-04-10 08:48:34.89 spid44s     Always On: The availability replica manager is starting. This is an informational message only. No user action is required.
-2025-04-10 08:48:34.90 spid44s     Always On: The availability replica manager is waiting for the instance of SQL Server to allow client connections. This is an informational message only. No user action is required.
-2025-04-10 08:48:34.90 spid28s     [4]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:48:34.90 spid30s     [32767]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:48:34.91 spid28s     Starting up database 'msdb'.
-2025-04-10 08:48:34.91 spid30s     Starting up database 'mssqlsystemresource'.
-2025-04-10 08:48:34.92 spid30s     The resource database build version is 16.00.4185. This is an informational message only. No user action is required.
-2025-04-10 08:48:34.95 spid30s     [3]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:48:34.96 spid30s     Starting up database 'model'.
-2025-04-10 08:48:35.01 spid28s     Converting database 'msdb' from version 927 to the current version 957.
-2025-04-10 08:48:35.01 spid28s     Database 'msdb' running the upgrade step from version 927 to version 928.
-2025-04-10 08:48:35.03 spid28s     Database 'msdb' running the upgrade step from version 928 to version 929.
-2025-04-10 08:48:35.04 spid30s     Converting database 'model' from version 927 to the current version 957.
-2025-04-10 08:48:35.05 spid30s     Database 'model' running the upgrade step from version 927 to version 928.
-2025-04-10 08:48:35.06 spid30s     Database 'model' running the upgrade step from version 928 to version 929.
-2025-04-10 08:48:35.07 spid28s     Database 'msdb' running the upgrade step from version 929 to version 930.
-2025-04-10 08:48:35.08 spid28s     Database 'msdb' running the upgrade step from version 930 to version 931.
-2025-04-10 08:48:35.09 spid30s     Database 'model' running the upgrade step from version 929 to version 930.
-2025-04-10 08:48:35.10 spid28s     Database 'msdb' running the upgrade step from version 931 to version 932.
-2025-04-10 08:48:35.11 spid30s     Database 'model' running the upgrade step from version 930 to version 931.
-2025-04-10 08:48:35.11 spid28s     Database 'msdb' running the upgrade step from version 932 to version 933.
-2025-04-10 08:48:35.12 spid30s     Database 'model' running the upgrade step from version 931 to version 932.
-2025-04-10 08:48:35.12 spid28s     Database 'msdb' running the upgrade step from version 933 to version 934.
-2025-04-10 08:48:35.13 spid30s     Database 'model' running the upgrade step from version 932 to version 933.
-2025-04-10 08:48:35.13 spid28s     Database 'msdb' running the upgrade step from version 934 to version 935.
-2025-04-10 08:48:35.14 spid30s     Database 'model' running the upgrade step from version 933 to version 934.
-2025-04-10 08:48:35.14 spid28s     Database 'msdb' running the upgrade step from version 935 to version 936.
-2025-04-10 08:48:35.15 spid30s     Database 'model' running the upgrade step from version 934 to version 935.
-2025-04-10 08:48:35.16 spid28s     Database 'msdb' running the upgrade step from version 936 to version 937.
-2025-04-10 08:48:35.16 spid30s     Database 'model' running the upgrade step from version 935 to version 936.
-2025-04-10 08:48:35.16 spid28s     Database 'msdb' running the upgrade step from version 937 to version 938.
-2025-04-10 08:48:35.17 spid30s     Database 'model' running the upgrade step from version 936 to version 937.
-2025-04-10 08:48:35.18 spid28s     Database 'msdb' running the upgrade step from version 938 to version 939.
-2025-04-10 08:48:35.18 spid30s     Database 'model' running the upgrade step from version 937 to version 938.
-2025-04-10 08:48:35.18 spid28s     Database 'msdb' running the upgrade step from version 939 to version 940.
-2025-04-10 08:48:35.19 spid30s     Database 'model' running the upgrade step from version 938 to version 939.
-2025-04-10 08:48:35.19 spid28s     Database 'msdb' running the upgrade step from version 940 to version 941.
-2025-04-10 08:48:35.20 spid30s     Database 'model' running the upgrade step from version 939 to version 940.
-2025-04-10 08:48:35.20 spid28s     Database 'msdb' running the upgrade step from version 941 to version 942.
-2025-04-10 08:48:35.21 spid30s     Database 'model' running the upgrade step from version 940 to version 941.
-2025-04-10 08:48:35.21 spid28s     Database 'msdb' running the upgrade step from version 942 to version 943.
-2025-04-10 08:48:35.21 spid30s     Database 'model' running the upgrade step from version 941 to version 942.
-2025-04-10 08:48:35.22 spid30s     Database 'model' running the upgrade step from version 942 to version 943.
-2025-04-10 08:48:35.24 spid28s     Database 'msdb' running the upgrade step from version 943 to version 944.
-2025-04-10 08:48:35.24 spid30s     Database 'model' running the upgrade step from version 943 to version 944.
-2025-04-10 08:48:35.25 spid28s     Database 'msdb' running the upgrade step from version 944 to version 945.
-2025-04-10 08:48:35.25 spid30s     Database 'model' running the upgrade step from version 944 to version 945.
-2025-04-10 08:48:35.26 spid30s     Database 'model' running the upgrade step from version 945 to version 946.
-2025-04-10 08:48:35.27 spid28s     Database 'msdb' running the upgrade step from version 945 to version 946.
-2025-04-10 08:48:35.27 spid30s     Database 'model' running the upgrade step from version 946 to version 947.
-2025-04-10 08:48:35.28 spid28s     Database 'msdb' running the upgrade step from version 946 to version 947.
-2025-04-10 08:48:35.29 spid30s     Database 'model' running the upgrade step from version 947 to version 948.
-2025-04-10 08:48:35.29 spid28s     Database 'msdb' running the upgrade step from version 947 to version 948.
-2025-04-10 08:48:35.30 spid30s     Database 'model' running the upgrade step from version 948 to version 949.
-2025-04-10 08:48:35.30 spid28s     Database 'msdb' running the upgrade step from version 948 to version 949.
-2025-04-10 08:48:35.31 spid30s     Database 'model' running the upgrade step from version 949 to version 950.
-2025-04-10 08:48:35.32 spid30s     Database 'model' running the upgrade step from version 950 to version 951.
-2025-04-10 08:48:35.32 spid28s     Database 'msdb' running the upgrade step from version 949 to version 950.
-2025-04-10 08:48:35.33 spid28s     Database 'msdb' running the upgrade step from version 950 to version 951.
-2025-04-10 08:48:35.34 spid30s     Database 'model' running the upgrade step from version 951 to version 952.
-2025-04-10 08:48:35.34 spid30s     Database 'model' running the upgrade step from version 952 to version 953.
-2025-04-10 08:48:35.35 spid28s     Database 'msdb' running the upgrade step from version 951 to version 952.
-2025-04-10 08:48:35.36 spid28s     Database 'msdb' running the upgrade step from version 952 to version 953.
-2025-04-10 08:48:35.36 spid30s     Database 'model' running the upgrade step from version 953 to version 954.
-2025-04-10 08:48:35.37 spid30s     Database 'model' running the upgrade step from version 954 to version 955.
-2025-04-10 08:48:35.37 spid30s     Database 'model' running the upgrade step from version 955 to version 956.
-2025-04-10 08:48:35.38 spid28s     Database 'msdb' running the upgrade step from version 953 to version 954.
-2025-04-10 08:48:35.39 spid28s     Database 'msdb' running the upgrade step from version 954 to version 955.
-2025-04-10 08:48:35.39 spid30s     Database 'model' running the upgrade step from version 956 to version 957.
-2025-04-10 08:48:35.40 spid28s     Database 'msdb' running the upgrade step from version 955 to version 956.
-2025-04-10 08:48:35.42 spid28s     Database 'msdb' running the upgrade step from version 956 to version 957.
-2025-04-10 08:48:35.42 spid30s     Clearing tempdb database.
-2025-04-10 08:48:35.51 spid30s     [2]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:48:35.51 spid30s     Starting up database 'tempdb'.
-2025-04-10 08:48:35.66 spid48s     The Service Broker endpoint is in disabled or stopped state.
-2025-04-10 08:48:35.66 spid48s     The Database Mirroring endpoint is in disabled or stopped state.
-2025-04-10 08:48:35.69 spid48s     Service Broker manager has started.
-2025-04-10 08:48:35.98 spid43s     A self-generated certificate was successfully loaded for encryption.
-2025-04-10 08:48:35.99 spid43s     Server is listening on [ 'any' <ipv6> 1433] accept sockets 1.
-2025-04-10 08:48:35.99 spid43s     Server is listening on [ 'any' <ipv4> 1433] accept sockets 1.
-2025-04-10 08:48:35.99 spid43s     Dedicated administrator connection support was not started because it is disabled on this edition of SQL Server. If you want to use a dedicated administrator connection, restart SQL Server using the trace flag 7806. This is an informational message only. No user action is required.
-2025-04-10 08:48:36.01 spid43s     Server is listening on [ ::1 <ipv6> 1431] accept sockets 1.
-2025-04-10 08:48:36.01 spid43s     Server is listening on [ 127.0.0.1 <ipv4> 1431] accept sockets 1.
-2025-04-10 08:48:36.02 spid43s     Recovery is complete. This is an informational message only. No user action is required.
-2025-04-10 08:48:36.02 spid43s     SQL Server is now ready for client connections. This is an informational message; no user action is required.
-2025-04-10 08:48:36.13 spid36s     The default language (LCID 0) has been set for engine and full-text services.
-2025-04-10 08:49:04.71 spid41s     [DevOpsSnapshotTelemetryTask] Evaluating the background task.
-2025-04-10 08:49:13.97 spid105     [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:49:13.98 spid105     Starting up database 'VetDb'.
-2025-04-10 08:49:13.98 spid105     RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:49:13.98 spid105     RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:49:14.02 spid105     Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:49:14.03 spid105     Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:49:37.30 Logon       Error: 17836, Severity: 20, State: 17.
-2025-04-10 08:49:37.30 Logon       Length specified in network packet payload did not match number of bytes read; the connection has been closed. Please contact the vendor of the client library. [CLIENT: 172.19.0.1]
-2025-04-10 08:49:38.37 Logon       Error: 17836, Severity: 20, State: 17.
-2025-04-10 08:49:38.37 Logon       Length specified in network packet payload did not match number of bytes read; the connection has been closed. Please contact the vendor of the client library. [CLIENT: 172.19.0.1]
-2025-04-10 08:49:38.38 Logon       Error: 17836, Severity: 20, State: 17.
-2025-04-10 08:49:38.38 Logon       Length specified in network packet payload did not match number of bytes read; the connection has been closed. Please contact the vendor of the client library. [CLIENT: 172.19.0.1]
-2025-04-10 08:49:38.39 Logon       Error: 17836, Severity: 20, State: 17.
-2025-04-10 08:49:38.39 Logon       Length specified in network packet payload did not match number of bytes read; the connection has been closed. Please contact the vendor of the client library. [CLIENT: 172.19.0.1]
-2025-04-10 08:49:43.42 Logon       Error: 17836, Severity: 20, State: 17.
-2025-04-10 08:49:43.42 Logon       Length specified in network packet payload did not match number of bytes read; the connection has been closed. Please contact the vendor of the client library. [CLIENT: 172.19.0.1]
-2025-04-10 08:50:17.54 spid105     [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:50:17.54 spid105     Starting up database 'VetDb'.
-2025-04-10 08:50:17.54 spid105     RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:50:17.54 spid105     RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:50:17.58 spid105     Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:50:17.60 spid105     Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:53:49.59 spid61      Attempting to load library 'xplog70.dll' into memory. This is an informational message only. No user action is required.
-2025-04-10 08:53:49.61 spid61      Using 'xplog70.dll' version '2022.160.4185' to execute extended stored procedure 'xp_msver'. This is an informational message only; no user action is required.
-2025-04-10 08:55:59.51 spid61      Using 'dbghelp.dll' version '4.0.5'
-2025-04-10 08:56:39.23 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:56:39.24 spid61      Starting up database 'VetDb'.
-2025-04-10 08:56:39.24 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:56:39.24 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:56:39.28 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:56:39.29 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:56:41.56 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:56:41.56 spid61      Starting up database 'VetDb'.
-2025-04-10 08:56:41.56 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:56:41.56 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:56:41.60 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:56:41.61 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:56:44.36 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:56:44.36 spid61      Starting up database 'VetDb'.
-2025-04-10 08:56:44.36 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:56:44.36 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:56:44.40 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:56:44.41 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:56:46.39 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:56:46.39 spid61      Starting up database 'VetDb'.
-2025-04-10 08:56:46.39 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:56:46.39 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:56:46.43 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:56:46.44 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:56:48.59 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:56:48.59 spid61      Starting up database 'VetDb'.
-2025-04-10 08:56:48.59 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:56:48.59 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:56:48.63 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:56:48.64 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:56:51.13 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:56:51.14 spid61      Starting up database 'VetDb'.
-2025-04-10 08:56:51.14 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:56:51.14 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:56:51.18 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:56:51.19 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:56:54.06 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:56:54.07 spid61      Starting up database 'VetDb'.
-2025-04-10 08:56:54.07 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:56:54.07 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:56:54.11 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:56:54.12 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:56:57.35 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:56:57.35 spid61      Starting up database 'VetDb'.
-2025-04-10 08:56:57.35 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:56:57.35 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:56:57.39 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:56:57.40 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:56:58.94 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:56:58.94 spid61      Starting up database 'VetDb'.
-2025-04-10 08:56:58.94 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:56:58.94 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:56:58.98 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:56:58.99 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:01.86 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:01.87 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:01.87 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:01.87 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:01.92 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:01.93 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:03.39 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:03.39 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:03.39 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:03.40 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:03.43 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:03.44 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:05.68 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:05.68 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:05.68 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:05.68 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:05.72 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:05.73 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:10.29 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:10.30 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:10.30 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:10.30 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:10.35 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:10.36 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:12.64 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:12.64 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:12.64 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:12.65 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:12.69 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:12.70 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:14.15 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:14.16 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:14.16 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:14.16 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:14.20 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:14.21 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:16.38 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:16.39 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:16.39 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:16.39 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:16.43 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:16.44 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:19.04 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:19.04 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:19.04 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:19.04 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:19.08 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:19.09 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:20.58 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:20.58 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:20.58 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:20.58 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:20.62 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:20.63 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:23.03 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:23.03 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:23.03 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:23.04 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:23.08 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:23.09 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:25.11 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:25.11 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:25.11 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:25.12 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:25.15 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:25.16 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:28.07 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:28.07 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:28.07 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:28.07 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:28.11 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:28.12 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:30.42 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:30.42 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:30.43 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:30.43 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:30.47 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:30.48 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:33.85 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:33.86 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:33.86 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:33.86 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:33.90 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:33.91 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:36.35 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:36.36 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:36.36 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:36.36 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:36.40 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:36.41 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:38.84 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:38.84 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:38.85 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:38.85 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:38.89 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:38.89 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:41.96 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:41.96 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:41.96 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:41.97 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:42.01 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:42.02 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:45.11 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:45.11 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:45.12 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:45.12 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:45.16 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:45.16 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:46.87 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:46.88 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:46.88 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:46.88 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:46.92 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:46.93 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:48.89 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:48.89 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:48.90 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:48.90 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:48.94 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:48.95 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:53.08 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:53.08 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:53.08 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:53.09 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:53.13 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:53.14 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:56.43 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:56.44 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:56.44 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:56.44 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:56.48 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:56.49 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:59.86 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:57:59.87 spid61      Starting up database 'VetDb'.
-2025-04-10 08:57:59.87 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:57:59.87 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:57:59.90 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:57:59.91 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:03.67 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:58:03.67 spid61      Starting up database 'VetDb'.
-2025-04-10 08:58:03.67 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:58:03.67 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:58:03.71 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:03.72 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:06.27 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:58:06.27 spid61      Starting up database 'VetDb'.
-2025-04-10 08:58:06.27 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:58:06.28 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:58:06.31 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:06.32 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:09.59 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:58:09.59 spid61      Starting up database 'VetDb'.
-2025-04-10 08:58:09.59 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:58:09.59 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:58:09.63 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:09.64 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:12.04 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:58:12.04 spid61      Starting up database 'VetDb'.
-2025-04-10 08:58:12.04 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:58:12.04 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:58:12.08 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:12.09 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:14.83 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:58:14.84 spid61      Starting up database 'VetDb'.
-2025-04-10 08:58:14.84 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:58:14.84 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:58:14.88 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:14.88 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:18.41 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:58:18.41 spid61      Starting up database 'VetDb'.
-2025-04-10 08:58:18.41 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:58:18.41 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:58:18.45 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:18.46 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:20.18 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:58:20.19 spid61      Starting up database 'VetDb'.
-2025-04-10 08:58:20.19 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:58:20.19 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:58:20.23 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:20.24 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:22.45 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:58:22.45 spid61      Starting up database 'VetDb'.
-2025-04-10 08:58:22.45 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:58:22.45 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:58:22.49 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:22.50 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:24.61 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:58:24.62 spid61      Starting up database 'VetDb'.
-2025-04-10 08:58:24.62 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:58:24.62 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:58:24.66 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:24.67 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:28.10 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:58:28.10 spid61      Starting up database 'VetDb'.
-2025-04-10 08:58:28.10 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:58:28.10 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:58:28.14 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:28.15 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:31.39 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:58:31.39 spid61      Starting up database 'VetDb'.
-2025-04-10 08:58:31.39 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:58:31.39 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:58:31.43 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:31.44 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:34.85 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:58:34.85 spid61      Starting up database 'VetDb'.
-2025-04-10 08:58:34.85 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:58:34.86 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:58:34.89 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:34.90 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:36.84 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:58:36.85 spid61      Starting up database 'VetDb'.
-2025-04-10 08:58:36.85 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:58:36.85 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:58:36.89 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:36.90 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:38.86 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:58:38.86 spid61      Starting up database 'VetDb'.
-2025-04-10 08:58:38.86 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:58:38.87 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:58:38.90 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:38.91 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:42.44 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:58:42.44 spid61      Starting up database 'VetDb'.
-2025-04-10 08:58:42.44 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:58:42.44 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:58:42.48 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:42.49 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:46.95 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:58:46.95 spid61      Starting up database 'VetDb'.
-2025-04-10 08:58:46.96 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:58:46.96 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:58:47.00 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:47.01 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:54.97 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:58:54.97 spid61      Starting up database 'VetDb'.
-2025-04-10 08:58:54.97 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:58:54.97 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:58:55.02 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:55.03 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:57.61 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:58:57.61 spid61      Starting up database 'VetDb'.
-2025-04-10 08:58:57.61 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:58:57.62 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:58:57.66 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:58:57.67 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:00.75 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:59:00.76 spid61      Starting up database 'VetDb'.
-2025-04-10 08:59:00.76 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:59:00.76 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:59:00.80 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:00.81 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:04.12 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:59:04.13 spid61      Starting up database 'VetDb'.
-2025-04-10 08:59:04.13 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:59:04.13 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:59:04.17 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:04.18 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:06.38 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:59:06.39 spid61      Starting up database 'VetDb'.
-2025-04-10 08:59:06.39 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:59:06.39 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:59:06.43 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:06.44 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:10.68 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:59:10.69 spid61      Starting up database 'VetDb'.
-2025-04-10 08:59:10.69 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:59:10.69 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:59:10.73 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:10.74 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:12.36 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:59:12.37 spid61      Starting up database 'VetDb'.
-2025-04-10 08:59:12.37 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:59:12.37 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:59:12.41 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:12.42 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:15.94 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:59:15.95 spid61      Starting up database 'VetDb'.
-2025-04-10 08:59:15.95 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:59:15.95 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:59:15.98 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:15.99 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:18.90 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:59:18.90 spid61      Starting up database 'VetDb'.
-2025-04-10 08:59:18.90 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:59:18.90 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:59:18.95 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:18.96 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:22.87 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:59:22.87 spid61      Starting up database 'VetDb'.
-2025-04-10 08:59:22.87 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:59:22.87 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:59:22.91 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:22.92 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:25.11 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:59:25.11 spid61      Starting up database 'VetDb'.
-2025-04-10 08:59:25.11 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:59:25.11 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:59:25.15 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:25.16 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:28.16 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:59:28.16 spid61      Starting up database 'VetDb'.
-2025-04-10 08:59:28.16 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:59:28.16 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:59:28.20 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:28.21 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:30.10 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:59:30.10 spid61      Starting up database 'VetDb'.
-2025-04-10 08:59:30.10 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:59:30.10 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:59:30.14 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:30.15 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:33.33 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:59:33.33 spid61      Starting up database 'VetDb'.
-2025-04-10 08:59:33.34 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:59:33.34 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:59:33.37 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:33.38 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:37.98 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:59:37.99 spid61      Starting up database 'VetDb'.
-2025-04-10 08:59:37.99 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:59:37.99 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:59:38.03 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:38.04 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:55.13 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:59:55.13 spid61      Starting up database 'VetDb'.
-2025-04-10 08:59:55.13 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:59:55.14 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:59:55.17 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:55.18 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:56.80 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:59:56.80 spid61      Starting up database 'VetDb'.
-2025-04-10 08:59:56.80 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:59:56.80 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:59:56.84 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:56.85 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:58.45 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 08:59:58.45 spid61      Starting up database 'VetDb'.
-2025-04-10 08:59:58.46 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 08:59:58.46 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 08:59:58.50 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 08:59:58.51 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:01.87 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 09:00:01.88 spid61      Starting up database 'VetDb'.
-2025-04-10 09:00:01.88 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 09:00:01.88 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 09:00:01.93 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:01.94 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:05.88 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 09:00:05.89 spid61      Starting up database 'VetDb'.
-2025-04-10 09:00:05.89 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 09:00:05.89 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 09:00:05.93 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:05.94 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:10.27 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 09:00:10.28 spid61      Starting up database 'VetDb'.
-2025-04-10 09:00:10.28 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 09:00:10.28 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 09:00:10.32 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:10.33 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:12.58 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 09:00:12.58 spid61      Starting up database 'VetDb'.
-2025-04-10 09:00:12.58 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 09:00:12.58 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 09:00:12.62 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:12.64 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:13.66 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 09:00:13.67 spid61      Starting up database 'VetDb'.
-2025-04-10 09:00:13.67 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 09:00:13.67 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 09:00:13.71 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:13.72 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:15.18 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 09:00:15.19 spid61      Starting up database 'VetDb'.
-2025-04-10 09:00:15.19 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 09:00:15.19 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 09:00:15.23 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:15.24 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:16.90 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 09:00:16.90 spid61      Starting up database 'VetDb'.
-2025-04-10 09:00:16.90 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 09:00:16.91 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 09:00:16.95 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:16.96 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:20.02 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 09:00:20.02 spid61      Starting up database 'VetDb'.
-2025-04-10 09:00:20.02 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 09:00:20.03 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 09:00:20.07 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:20.08 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:22.42 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 09:00:22.42 spid61      Starting up database 'VetDb'.
-2025-04-10 09:00:22.43 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 09:00:22.43 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 09:00:22.49 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:22.51 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:23.96 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 09:00:23.96 spid61      Starting up database 'VetDb'.
-2025-04-10 09:00:23.96 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 09:00:23.97 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 09:00:24.03 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:24.04 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:26.13 spid61      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2025-04-10 09:00:26.14 spid61      Starting up database 'VetDb'.
-2025-04-10 09:00:26.14 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2025-04-10 09:00:26.14 spid61      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2025-04-10 09:00:26.18 spid61      Parallel redo is started for database 'VetDb' with worker pool size [4].
-2025-04-10 09:00:26.19 spid61      Parallel redo is shutdown for database 'VetDb' with worker pool size [4].
+2025-04-13 18:31:13.08 Server      SQL Server detected 1 sockets with 2 cores per socket and 4 logical processors per socket, 4 total logical processors; using 4 logical processors based on SQL Server licensing. This is an informational message; no user action is required.
+2025-04-13 18:31:13.09 Server      SQL Server is starting at normal priority base (=7). This is an informational message only. No user action is required.
+2025-04-13 18:31:13.10 Server      Detected 6356 MB of RAM, 5876 MB of available memory, 5876 MB of available page file. This is an informational message; no user action is required.
+2025-04-13 18:31:13.10 Server      Using conventional memory in the memory manager.
+2025-04-13 18:31:13.11 Server      Detected pause instruction latency: 56 cycles.
+2025-04-13 18:31:13.12 Server      SQL Server detected the following NUMA node configuration (NUMA Node number 0, Processor Group number 0, CPU Mask 0x000000000000000f).
+2025-04-13 18:31:13.13 Server      Page exclusion bitmap is enabled.
+2025-04-13 18:31:13.21 Server      Buffer pool extension is not supported on Linux platform.
+2025-04-13 18:31:13.25 Server      Buffer Pool: Allocating 8388608 bytes for 931745 hashPages.
+2025-04-13 18:31:13.66 Server      Buffer pool extension is already disabled. No action is necessary.
+2025-04-13 18:31:14.46 Server      Installing Client TLS certificates to the store.
+2025-04-13 18:31:14.48 Server      CPU vectorization level(s) detected:  SSE SSE2 SSE3 SSSE3 SSE41 SSE42 AVX AVX2 POPCNT BMI1 BMI2 AVX512 (F CD BW DQ VL VNNI)
+2025-04-13 18:31:14.59 Server      Successfully initialized the TLS configuration. Allowed TLS protocol versions are ['1.0 1.1 1.2']. Allowed TLS ciphers are ['ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:!DHE-RSA-AES256-GCM-SHA384:!DHE-RSA-AES128-GCM-SHA256:!DHE-RSA-AES256-SHA:!DHE-RSA-AES128-SHA'].
+2025-04-13 18:31:14.65 Server      Query Store settings initialized with enabled = 1, 
+2025-04-13 18:31:14.68 Server      The maximum number of dedicated administrator connections for this instance is '1'
+2025-04-13 18:31:14.69 Server      Node configuration: node 0: CPU mask: 0x000000000000000f:0 Active CPU mask: 0x000000000000000f:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
+2025-04-13 18:31:14.74 Server      Using dynamic lock allocation.  Initial allocation of 2500 Lock blocks and 5000 Lock Owner blocks per node.  This is an informational message only.  No user action is required.
+2025-04-13 18:31:14.84 Server      In-Memory OLTP initialized on lowend machine.
+2025-04-13 18:31:14.86 Server      CLR version v4.0.30319 loaded.
+2025-04-13 18:31:15.17 Server      [INFO] Created Extended Events session 'hkenginexesession'
+2025-04-13 18:31:15.18 Server      Database Instant File Initialization: enabled. For security and performance considerations see the topic 'Database Instant File Initialization' in SQL Server Books Online. This is an informational message only. No user action is required.
+2025-04-13 18:31:15.27 Server      Total Log Writer threads: 2. This is an informational message; no user action is required.
+2025-04-13 18:31:15.32 Server      clwb is selected for pmem flush operation.
+2025-04-13 18:31:15.33 Server      Software Usage Metrics is disabled.
+2025-04-13 18:31:15.37 spid19s     [1]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-04-13 18:31:15.38 spid19s     Starting up database 'master'.
+2025-04-13 18:31:15.55 spid19s     23 transactions rolled forward in database 'master' (1:0). This is an informational message only. No user action is required.
+2025-04-13 18:31:15.61 spid19s     0 transactions rolled back in database 'master' (1:0). This is an informational message only. No user action is required.
+2025-04-13 18:31:15.65 spid19s     Recovery is writing a checkpoint in database 'master' (1). This is an informational message only. No user action is required.
+2025-04-13 18:31:15.63 Server      Common language runtime (CLR) functionality initialized.
+2025-04-13 18:31:15.99 spid19s     SQL Server Audit is starting the audits. This is an informational message. No user action is required.
+2025-04-13 18:31:16.00 spid19s     SQL Server Audit has started the audits. This is an informational message. No user action is required.
+2025-04-13 18:31:16.49 spid19s     SQL Trace ID 1 was started by login "sa".
+2025-04-13 18:31:16.55 spid19s     Server name is 'f05e739fe8f3'. This is an informational message only. No user action is required.
+2025-04-13 18:31:16.73 spid42s     Always On: The availability replica manager is starting. This is an informational message only. No user action is required.
+2025-04-13 18:31:16.75 spid42s     Always On: The availability replica manager is waiting for the instance of SQL Server to allow client connections. This is an informational message only. No user action is required.
+2025-04-13 18:31:16.77 spid44s     [4]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-04-13 18:31:16.81 spid46s     [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-04-13 18:31:16.84 spid44s     Starting up database 'msdb'.
+2025-04-13 18:31:16.84 spid46s     Starting up database 'VetDb'.
+2025-04-13 18:31:16.86 spid22s     [32767]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-04-13 18:31:16.88 spid46s     RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-04-13 18:31:16.91 spid22s     Starting up database 'mssqlsystemresource'.
+2025-04-13 18:31:16.92 spid46s     RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-04-13 18:31:16.97 spid22s     The resource database build version is 16.00.4185. This is an informational message only. No user action is required.
+2025-04-13 18:31:17.11 spid22s     [3]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-04-13 18:31:17.14 spid22s     Starting up database 'model'.
+2025-04-13 18:31:17.16 spid46s     Parallel redo is started for database 'VetDb' with worker pool size [2].
+2025-04-13 18:31:17.22 spid46s     7 transactions rolled forward in database 'VetDb' (5:0). This is an informational message only. No user action is required.
+2025-04-13 18:31:17.33 spid44s     Recovery is writing a checkpoint in database 'msdb' (4). This is an informational message only. No user action is required.
+2025-04-13 18:31:17.35 spid46s     0 transactions rolled back in database 'VetDb' (5:0). This is an informational message only. No user action is required.
+2025-04-13 18:31:17.42 spid46s     Parallel redo is shutdown for database 'VetDb' with worker pool size [2].
+2025-04-13 18:31:17.53 spid22s     Clearing tempdb database.
+2025-04-13 18:31:17.81 spid22s     [2]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-04-13 18:31:17.84 spid22s     Starting up database 'tempdb'.
+2025-04-13 18:31:17.91 Server      External governance manager initialized
+2025-04-13 18:31:18.00 spid44s     The Service Broker endpoint is in disabled or stopped state.
+2025-04-13 18:31:18.00 spid44s     The Database Mirroring endpoint is in disabled or stopped state.
+2025-04-13 18:31:18.03 spid44s     Service Broker manager has started.
+2025-04-13 18:31:18.82 spid40s     A self-generated certificate was successfully loaded for encryption.
+2025-04-13 18:31:18.83 spid40s     Server is listening on [ 'any' <ipv6> 1433] accept sockets 1.
+2025-04-13 18:31:18.83 spid40s     Server is listening on [ 'any' <ipv4> 1433] accept sockets 1.
+2025-04-13 18:31:18.84 spid40s     Dedicated administrator connection support was not started because it is disabled on this edition of SQL Server. If you want to use a dedicated administrator connection, restart SQL Server using the trace flag 7806. This is an informational message only. No user action is required.
+2025-04-13 18:31:18.86 spid40s     Server is listening on [ ::1 <ipv6> 1431] accept sockets 1.
+2025-04-13 18:31:18.86 spid40s     Server is listening on [ 127.0.0.1 <ipv4> 1431] accept sockets 1.
+2025-04-13 18:31:18.87 spid40s     Recovery is complete. This is an informational message only. No user action is required.
+2025-04-13 18:31:18.88 spid40s     SQL Server is now ready for client connections. This is an informational message; no user action is required.
+2025-04-13 18:31:20.99 spid37s     Attribute synchronization initialized
+2025-04-13 18:31:21.00 spid37s     Attribute synchronization manager initialized
+2025-04-13 18:31:46.00 spid30s     [DevOpsSnapshotTelemetryTask] Evaluating the background task.
+2025-04-13 18:32:37.53 spid86      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2025-04-13 18:32:37.54 spid86      Starting up database 'VetDb'.
+2025-04-13 18:32:37.55 spid86      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2025-04-13 18:32:37.55 spid86      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2025-04-13 18:32:37.68 spid86      Parallel redo is started for database 'VetDb' with worker pool size [2].
+2025-04-13 18:32:38.01 spid86      Parallel redo is shutdown for database 'VetDb' with worker pool size [2].
+2025-04-13 18:36:29.30 spid61      Attempting to load library 'xplog70.dll' into memory. This is an informational message only. No user action is required.
+2025-04-13 18:36:29.34 spid61      Using 'xplog70.dll' version '2022.160.4185' to execute extended stored procedure 'xp_msver'. This is an informational message only; no user action is required.
+2025-04-13 18:38:35.76 spid61      Using 'dbghelp.dll' version '4.0.5'
