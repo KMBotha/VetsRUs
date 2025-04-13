@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div class="btn-group" role="group" aria-label="Animal Selection">
+        <a asp-controller="Cat" asp-action="Index" class="btn btn-outline-primary">Cats</a>
+        <a asp-controller="Dog" asp-action="Index" class="btn btn-outline-success">Dogs</a>
+    </div>
+</div>
